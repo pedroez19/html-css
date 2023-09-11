@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HTML5</title>
+</head>
+<body>
+    <h1>Imagem dinâmica</h1>
+    <p>Tente abrir esse site em vários dispositivos diferentes ou simplesmente aumente e diminua o tamanho do seu navegador.</p>
+
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens/foto-p.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagens/foto-m.png" type="image/png">
+        <img src="imagens/foto-g.png" alt="Imagem flexível"> <!-- As ordens das imagens sempre tem que ser da menor para a maior. A menor sempre na primeira linha e vai aumentando com as outras. E sempre colocar uma folginha nos px, aumentar 50xp. use a tag 'picture' para adicionar várias imagens no site e a tag 'source' para adicinor as imagens.-->
+    </picture>
+
+    <h1>Reproduzindo Áudios em HTML5</h1>
+    <p>Vamos aprender a reproduzir áudios em HTML5</p>
+    <audio src="midia/Everyday-Jason-Farnham.mp3" controls autoplay></audio><!-- MP3, WAV e OGG. Evitar o áudio wan por ele ser um arquivo muito grande e pode deixar o site lento.-->
+
+    <h1>Outra forma de colocar áudio</h1>
+    <p>Esta aqui</p>
+    <audio preload="metadata" controls autoplay lopp>
+        <source src="midia/Get-Outside-Jason-Farnham.mp3" type="audio/mpeg">
+        <p>Infelizmente o seu navegador não consegue reproduzir áudio. <a href="midia/Get-Outside-Jason-Farnham.mp3">Clique aqui para baixar o arquivo MP3</a></p> <!-- Caso o navegador não carregue o áudio ele vai para o proximo arquivo de áudio, caso não for de novo vai para o outro e por ai vai e se o navegador não mostrar vai aparecer uma forma de baixar o link do arquivo de áudio. 'loop' serve para fazer o áudio voltar do começo, 'controls' serve para aparecer o botão de play e 'autoplay o áudio vai tocar sozinho'-->
+    </audio>
+</body>
+</html>
