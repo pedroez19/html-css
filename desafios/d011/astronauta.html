@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Astronauta</title>
+    <style>
+        body {
+            height: 100vh;
+            background-color: #030C33;
+            background-image: url(imagens/espaco.jpg);
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-size: cover;
+            background-attachment: fixed;
+        }
+
+        .voando {
+            background-size: cover;
+            display: inline-block;
+            width: 500px;
+            height: 500px;
+        }
+
+        div#conteudo {
+            background-image: url('imagens/astronauta.png');
+            position: absolute;
+            
+            left: 50%;
+            top: 50%;
+
+            transform: translate(-38%, -50%);
+        }
+    </style>
+</head>
+<body>
+    <div class="voando" id="conteudo">
+
+    </div>
+</body>
+</html>
